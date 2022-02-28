@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+html, body {
+  height: 100%;
+}
+
+body{
+	background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	background-size: 100% 100%;
+	font-family: 'Rock Salt', cursive;
+}
+
+#container{
+	text-align:left;
+}
+
+#container, footer{
+	width:960px;
+	margin:40px auto;
+	text-align:center;
+	background: url("../img/bg-paper.jpg") center repeat-y;
+}
+
+main{
+	text-align: left;
+	padding:0px 20px 0px 60px;
+	height:650px;
+}
+
+footer{
+	height: 50px; 
+}
+
+nav ul{
+	list-style-type:none;
+}
+nav li{
+	display:inline;
+	margin:10px;
+}
+
+h1{
+	font-size:54px;
+	line-height:64px;
+	text-align:center;
+}
+#rulles{
+	margin: 25px;
+	font-weight: bold;
+	color: #090979;
+	/* font-family: ; */
+}
+nav{
+	margin: 20px;
+}
+
+h2{
+	font-size:42px;
+	line-height:52px;
+	text-align:center;
+}
+
+h4{
+	font-size:18px;
+	line-height:24px;
+	text-align:center;
+}
+
+#swinger{
+	background: url(../img/gallows.png) no-repeat;
+	text-align:left;
+	display:inline-block;
+	height: 560px; width: 300px;
+	position: relative;
+	float: left;
+}
+#hanger{
+	position:absolute;
+	top:78px; 
+	left: 140px;
+}
+
+#main-board{
+	margin-top: 62px;
+	display:inline-block;
+	text-align:center;
+	height: 560px;
+	width: 560px;
+	float:left;
+}
+
+#lettersUsed{
+	text-transform:uppercase;
+	letter-spacing:6px;
+}
+
+#solution,#lettersUsed, #guessesRemaining{
+	height:56px;
+	padding-top:24px;
+	font-size:24px;
+}
+
+.domLetter{
+	height:24px; width:24px;
+	border-bottom:2px solid #000;
+	margin: 8px;
+	display:inline-block;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.invisImg{
+	z-index:10;
+	position: absolute;
+	top:170px; 
+	left:60px;
+	visibility: hidden;
+}
+
+#btnNewGame{
+	width:120px; 
+	height:48px;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-radius: 12px;
+}
+#btnNewGame:hover{
+	background-color: #000;
+	color: #FFF;
+	box-shadow: 5px 10px 18px #888888;
+}
+
+/* -- Swing animation -- */
+@-webkit-keyframes swinging{
+0%{-webkit-transform: rotate(5deg);}
+50%{-webkit-transform: rotate(-2deg)}
+100%{-webkit-transform: rotate(5deg);}
+}
+
+@keyframes swinging{
+0%{transform: rotate(5deg);}
+50%{transform: rotate(-2deg)}
+100%{transform: rotate(5deg);}
+}
+
+.swingimage{
+-webkit-transform-origin: 50% 0;
+transform-origin: 50% 0;
+-webkit-animation: swinging 8.5s ease-in-out forwards infinite;
+animation: swinging 8.5s ease-in-out forwards infinite;
+}
+/* --------------------- */
+
