@@ -1,12 +1,3 @@
-//Hive 
-var hive= require('@hiveio/hive-js');
-
-var username="sharipkinanna@gmail.com";
-
-hive.api.getAccounts([username], function(err, response){
-  console.log(err, response);
-});
-
 var objGame = {
   //DOM
   pgHint: document.getElementById("hint"),
